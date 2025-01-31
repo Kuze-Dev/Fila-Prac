@@ -19,6 +19,12 @@ class AuthorResource extends Resource
     protected static ?string $model = Author::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user-circle';
+    protected static ?string $navigationGroup = 'Book Management';
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
 
 
     public static function form(Form $form): Form

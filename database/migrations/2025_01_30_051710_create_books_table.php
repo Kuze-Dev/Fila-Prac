@@ -19,7 +19,8 @@ return new class extends Migration
             $table->year('published_year')->nullable();
             $table->string('isbn')->unique()->nullable();
             $table->integer('available_copies')->default(1);
-            $table->year('published_year')->nullable();
+            $table->string('book_image')->nullable();  // Stores the image filename or path
+
             $table->timestamps();
         });
     }

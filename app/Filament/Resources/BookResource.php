@@ -19,6 +19,12 @@ class BookResource extends Resource
     protected static ?string $model = Book::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-folder'; // Use any custom SVG if you prefer
+    protected static ?string $navigationGroup = 'Book Management';
+
+    public static function getNavigationBadge(): ?string
+{
+    return static::getModel()::count();
+}
 
     public static function form(Form $form): Form
     {
