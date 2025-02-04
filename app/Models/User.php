@@ -7,6 +7,7 @@ use App\Models\Borrow;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Filament\Models\Contracts\FilamentUser;
+use BezhanSalleh\FilamentShield\FilamentShield;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use BezhanSalleh\FilamentShield\Traits\HasPanelShield;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -59,4 +60,12 @@ class User extends Authenticatable implements FilamentUser
     }
 
 
-}
+    // public function canAccessFilament(): bool
+    // {
+    //     return $this->hasRole(Utils::getSuperAdminName()) || $this->hasRole(Utils::getPanelUserRoleName());
+
+    // }
+
+
+    }
+
