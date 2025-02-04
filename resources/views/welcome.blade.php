@@ -35,12 +35,12 @@
 
   <div class="mb-2">
 
-     <input type="text" class="border p-4 w-full focus:outline-none focus:border-gray-500 rounded-md focus:ring-blue-500 placeholder:font-bold "  placeholder="Email or phone number">
+     <input type="email" class="border p-4 w-full focus:outline-none focus:border-gray-500 rounded-md focus:ring-blue-500 placeholder:font-bold "  placeholder="Email or phone number">
   </div>
 
   <div class="">
 
-     <input type="text" class="border p-4 mt-1 w-full focus:outline-none focus:border-gray-500 placeholder:font-bold rounded-md" placeholder="Password">
+     <input type="password" class="border p-4 mt-1 w-full focus:outline-none focus:border-gray-500 placeholder:font-bold rounded-md" placeholder="Password">
   </div>
 
   <button class="bg-blue-600 w-full mt-5 p-3 text-[20px] lg:rounded-md xl:rounded-md rounded-full font-bold text-white">Log In</button>
